@@ -71,8 +71,6 @@
 
 
 
-/* eslint-disable react/no-unescaped-entities */
-
 
 'use client'
 import Image from 'next/image';

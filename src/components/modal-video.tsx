@@ -53,6 +53,7 @@ export default function ModalVideo({
           {/* Modal backdrop */}
           <div  className="fixed inset-0 z-[99999] bg-black bg-opacity-75 transition-opacity">
           <Transition.Child
+            as = "div"
             enter="transition ease-out duration-200"
             enterFrom="opacity-0"
             enterTo="opacity-100"
