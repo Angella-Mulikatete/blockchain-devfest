@@ -1,5 +1,6 @@
 'use client'
 
+import React, { JSX } from 'react'
 import { useState, useRef, useEffect } from 'react'
 
 type AccordionpProps = {
@@ -29,7 +30,7 @@ export default function Accordion({
       <button
         className="flex items-center w-full text-lg font-medium text-left py-5 border-t border-gray-200"
         onClick={(e) => { e.preventDefault(); setAccordionOpen(!accordionOpen); }}
-        aria-expanded={accordionOpen}
+        aria-expanded={Boolean(accordionOpen)}
       >
         <svg className="w-4 h-4 fill-current text-blue-500 shrink-0 mr-8 -ml-12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <rect y="7" width="16" height="2" rx="1" className={`transform origin-center transition duration-200 ease-out ${accordionOpen && '!rotate-180'}`} />
