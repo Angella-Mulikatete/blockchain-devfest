@@ -166,12 +166,14 @@ const Testimonials: React.FC = () => {
             <div className="flex space-x-4">
               <button
                 onClick={prevTestimonial} 
+                aria-label="Previous testimonial"
                 className="border border-gray-300 hover:bg-gray-100 transition-colors rounded-full w-12 h-12 flex items-center justify-center group"
               >
                 <ChevronLeft className="text-gray-600 group-hover:text-black" />
               </button>
               <button
-                onClick={nextTestimonial} 
+                onClick={nextTestimonial}
+                aria-label="Next testimonial"
                 className="bg-black text-white hover:bg-gray-800 transition-colors rounded-full w-12 h-12 flex items-center justify-center group"
               >
                 <ChevronRight className="text-white group-hover:text-gray-300" />
